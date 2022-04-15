@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class ListConverterTest {
+class ListConvertToMapTest {
 
     private static final List<String> list = new ArrayList<>();
     private static String prefix;
@@ -24,20 +24,20 @@ class ListConverterTest {
 
     @Test
     void inputShouldNotBeEmpty() {
-        var map = ListConverter.createMap(list, prefix);
+        var map = ListConvertToMap.createMap(list, prefix);
         assertEquals(list.size(), 5);
         assertNotNull(prefix);
     }
 
     @Test
     void shouldSelectThreeItemsWithPrefixBo() {
-        var map = ListConverter.createMap(list, prefix);
+        var map = ListConvertToMap.createMap(list, prefix);
         assertEquals(map.size(), 3);
     }
 
     @Test
     void shouldCreateExpectedResult() {
-        var map = ListConverter.createMap(list, prefix);
+        var map = ListConvertToMap.createMap(list, prefix);
         assertEquals(map.get("bob"), "2");
         assertEquals(map.get("bobby"), "3");
         assertEquals(map.get("bob2"), "3");

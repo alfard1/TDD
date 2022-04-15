@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class ListConverter {
+class ListConvertToMap {
 
 // - Create a function that takes in a list of names and a prefix.
 // - Filter the list of names by the prefix so that you only retain the names that start with that prefix.
